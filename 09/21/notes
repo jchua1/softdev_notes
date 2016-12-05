@@ -1,0 +1,22 @@
+use python in the virtualenv folder
+leave the venv file alone
+keyword: "which" tells you where the file lives
+when venv is running, you use the modules in the venv directory
+can move to any other directory when venv is running: useful so that you dont commit the venv directory when using Github
+jinja allows you to separate html files and python files
+
+
+
+HTML Templates (jinja2)
+
+	Takes a lot of the HTML out of your python code.
+
+	Template files must be stored in a templates/ directory at the same level as your Flask app file.
+
+	render_template(<FILE>, <VAR1>, <VAR2>, ...)
+		Flask function to take a 
+
+
+app.debug refreshes app when a change is detected
+{{ VAR }} indicates variable
+{% for i in fred }

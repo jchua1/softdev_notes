@@ -1,0 +1,17 @@
+Aim: URL binding is the art of redirection
+
+url_for
+
+	Flask function that will build teh correct url for a particular function.
+
+	syntax: url_for( <FUNCTION> )
+
+redirect
+
+	Flask function that will redirect a call to one route to a different response.
+
+	Often used in combination with url_for.
+
+	example
+
+		return redirect (url_for('login'))

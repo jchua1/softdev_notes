@@ -1,0 +1,24 @@
+Aim: Extending your template knowledge.
+
+Do Now: Write a flask app with a single route and a simple html template
+
+<style>
+body {
+	background-color: lightsteelblue
+}
+
+h1 {
+	color: red;
+}
+</style>
+
+Extend HTML templates
+
+	Any template can be "inherited" by others.
+	
+	To extend a template: {% extends "<TEMPLATE>" %}
+	
+	You can define sections to override inside
+		{% block <NAME> %} {% endblock %}
+	
+	

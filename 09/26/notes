@@ -1,0 +1,16 @@
+- Import other python files to make code more compact
+- Shouldn't write free floating code in flask app because you can run into potential -issues
+- Related to hw: job chosen when server is started so it picks the same job every -single time you refresh
+- Can put global variables at the top of the file (split dictionary once)
+- Attaching code to functions makes code modular
+- One directory per flask application
+- Importing other python files: from utils import <python file>
+- To import properly: touch utils/__init__.py <-- to make directories into modules
+
+
+Example Flask Organization
+	flask-app/
+		app.py	    the actual flask application
+		templates/  all your templates
+		utils/      extra python modules
+		data/	    data files
