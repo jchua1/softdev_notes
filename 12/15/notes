@@ -1,0 +1,11 @@
+var b = document.getElementbyId("b");
+
+b.addEventListener('click', function() { alert("ANNOYING!"); });
+
+b.addEventListener('click', alert("ANNOYING"));
+										^ Return value
+										
+var f = function(e) {
+	console.log(e);    
+	console.log(this); DOM element that called the event
+};
