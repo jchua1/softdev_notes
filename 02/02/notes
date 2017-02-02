@@ -1,0 +1,29 @@
+Aim: Humongous Learnination
+
+Do Now: What are your problems with SQL/relational DBs?
+
+Drawbacks of a SQL database
+- fixed schema, must be known ahead of time
+- lists problematic
+- redundant data (in a bad way)
+- must live on a single host
+
+Alternative to relational, schema-oriented db:
+	document-oriented DB
+	
+Doc-oriented DB:
+- record stored as a doc instead of a row in a table
+- each doc contains all data associated with given record as key-value pairs ("fields")
+- fields need no type specification
+- a field may contain different types of data
+	eg, lists, dicts, etc.
+- docs may be grouped together in a collection (roughly equivalent to a relDB table)
+- docs in a collection need NOT have same complement of fields
+- each doc gets primary key, usually assigned by DB manager
+
+NoSQL
+- not-only SQL
+
+mongo
+- requires server
+- allows distribution of databases over many hosts
