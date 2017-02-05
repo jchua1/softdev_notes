@@ -1,0 +1,65 @@
+Aim: Papayas and Mongos
+
+Mongo Workflow:
+1. Connect server
+2. Pick DB on server
+3. Manipulate collections in this DB
+4. By manipulating docs in collection
+
+PROTIPS for today:
+- mongo shell (SSH to lisa)
+- python shell (local)
+- python editor
+
+NOTE:
+each workstation has mongod, mongo, and pymongo
+BUT
+do not use your local mongo server for HW
+(use Lisa's MongoDB server)
+
+to launch mongo shell:
+$ mongo
+
+mongo shell commands:
+
+> show dbs
+	print dbs on server
+	
+> show collections
+	print list of collections in current database
+	
+> use [DB_NAME]
+	switch to specified db (default: test)
+	create if not there
+	
+PYMONGO
+
+to use:
+from pymongo import MongoClient
+
+1. connect server
+create a MongoClient instance:
+
+on localhost:
+c = MongoClient()
+c = MongoClient('localhost', 27017)
+
+elsewhere:
+c = MongoClient(ADDRESS, PORT)
+eg
+c = MongoClient('lisa.stuy.edu')
+c = MongoClient('lisa.stuy.edu', 27017)
+
+2. pick DB on server
+
+eg
+ourDB = c['chromeo']
+OR
+ourDB = c.chromeo
+
+3. manipulate collections in this DB
+4. by manipulating docs in collection
+
+ourDB.foo.insert_one(DICTIONARY)
+
+ourDB.foo.insert_many(LIST_OF_DICTS)
