@@ -1,0 +1,8 @@
+.delete_one(QUERY) -> delete first match
+.delete_many(QUERY) -> delete all matches
+
+.update_one(QUERY, OPERATION) -> update first match
+.update_many(QUERY, OPERATION) -> update all matches
+	
+	OPERATIONS
+		e.g. '$set', '$unset', '$inc'

@@ -1,0 +1,43 @@
+Aim: Canvassing the nabe with DOM and HTML5
+
+Do Now: Engage your imagination, and put thoughts to paper...
+
+The year is 1995.
+You are a HS senior.
+
+a) What are you wearing?
+b) What does your CD collection look like?
+c) What is the state of the Internet?
+d) What does your webpage look like?
+
+???
+
+The world's best website:
+www.angelfire.com/super/badwebs/
+
+HTML5
+Redesign of HTML with focus on accessing modern web browser features
+
+- Designed around JS and a standardized DOM
+- Includes built-in suppot for audio and video playback
+- Inlcudes and element that can be directly drawn on
+
+Canvas
+HTML5 element that provides a drawing area
+
+- JS functions can draw on a canvas element
+- You must declare what context you are drawing in
+	E.g. 2D drawing, 3D drawing, raw bitmap rendering...
+	
+Basic canvas operation:
+
+HTML:
+<canvas height="500" width="500" id="slate">
+</canvas>
+
+JS:
+var c = document.getElementById('slate');
+var ctx = c.getContext('2d');
+
+ctx.fillStyle = '##ff0000';
+ctx.fillRect(50, 50, 100, 200);
