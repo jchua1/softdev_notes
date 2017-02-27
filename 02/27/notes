@@ -1,0 +1,71 @@
+Aim: What's yer Vector Victor?
+
+XML (eXtensible Markup Language):
+	a markup language defining a set of rules for encoding documents in a format both human- and machine-readable.
+	
+	* framework for creating markup-based grammars
+	* not a formatting language (XML != HTML)
+		* XML was designed to carry data
+			- with focus on what data is
+		* HTML was designed to display data
+			- with focus on how data looks
+		* XML tags are not predefined like HTML tags are
+		* XML uses some syntatic standards of HTML (tags, attributes)
+		* "XML is just infornmation wrapped in tags."
+	* focus on sorting and representing data
+		(instead of rendering and displaying)
+	* an XML namespace is defined by the tags and attributes asscoaited with a specific XML language
+	
+	Uses:
+	* MS office
+	* LibreOffice
+	* iWork
+	* MS .NET
+	* OSX application prefs
+	
+SVG:
+	
+	* Scalable Vector Graphics
+	* vector image format
+	* XML-based
+	* an SVG img and its actions are defined in XML text files
+	
+	Vector graphics:
+		not represented as a 2d grid of pixels ("raster") but as a list of drawing commands
+			(eg: line, circle, rectangle, curve, ...)
+			
+	Biggest advantage to vector graphics:
+		scaling without pixelation
+		
+	<svg> element is designed to store SVG code
+	(ie, SVG XML elements)
+	
+	<svg xmlns="https://www.w3.org/2000/svg">
+		SVG CODE HERE
+	</svg>
+	
+	xmlns
+		Attribute that identifies the namespace for the specific XML language being used
+		
+	Creating SVG elements in JS
+	
+	document.createElementNS(
+		NAMESPACE_IDENTIFIER, ELEMENT
+	);
+	
+	Creates an element from a specified XML namespace
+	
+	svg example:
+	
+	var c1 = document.createElementNS(
+		"https://www.w3.org/2000/svg",
+		"circle");
+		
+	Once created, you can modify it with setAttribute calls...
+	
+	c1.setAttribute("cx", "200");
+	
+	To add the elemtn to your svg container, use appendChild function...
+	
+	var pic = document.getElementById("svgid");
+	pic.appendChild(c1);
