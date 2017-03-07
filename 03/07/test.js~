@@ -1,0 +1,3 @@
+var master = document.getElementById('master');
+var a = document.getElementById('a');
+var b = document.getElementById('b');

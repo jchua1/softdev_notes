@@ -1,0 +1,48 @@
+Aim: Improve listening skills
+
+DOM level 0:
+
+<button onclick="alert('AYO');">
+	Hello, is there anybody in there?
+</button>
+
+BAD:
+- inflexible
+- blends structure and functionality
+
+DOM level 1:
+
+document.getElementByID('myB')
+	.onclick = function() {
+		alert('AYO!');
+	}
+
+PROS:
+- more flexible
+- separates JS from HTML
+CONS:
+- only 1 handler/element
+
+DOM level 2: add event listener(s)
+
+var el = document.getElementById('myB');
+el.addEventListener('click', function() {
+	alert('AYO!');
+}, false);
+
+PROS:
+- separates JS from HTML
+- no limit on number of event handlers
+- can choose capture or bubble phase for triggering (true: capture, false: bubble)
+CONS:
+- bit more code
+
+TASK:
+- Whip up an HTML file with a list of lists
+- Add JS to facilitate
+	- click on list item triggers effect on it
+	- click on list items triggers effect on other items
+	
+Ye Olde Target: property of event, reference to object that dispatched event
+
+clickedTarget = event.target
