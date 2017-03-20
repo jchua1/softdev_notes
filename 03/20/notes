@@ -1,0 +1,45 @@
+Aim: DDD
+
+The Basics
+
+Include
+http://d3js.org/d3.v3.min.js
+in a script tag to use d3, or download the source and link that instead
+
+
+Selectors
+
+Like jquery, you can select DOM elements using d3 functions
+
+d3.select( <IDENTIFIER> );
+	Returns the first element that matches the given identifier
+	
+d3.selectAll( <IDENTIFIER> );
+	Returns an array of all the elements that match the given identifier
+	
+A D3 selections is an arrays of nodes
+
+d3.selectAll("p").style("color", "white")
+
+
+Why d3?
+
+Allows passing functions to set attribute values dynamically:
+
+d3.selectAll("p")
+	.style("font-size",
+	function(){
+		return Math.floor(Math.random()*15)+"px"});
+		
+
+Binding data
+
+D3 facilitates binding data to DOM elements
+
+
+Enter selection:
+	Collection of placeholder nodes for each data element for which no corresponding existing DOM element was found.
+	
+or, the skinny on the enter & exit selections:
+	ENTER SELECTION: data w/o nodes
+	EXIT SELECTION: nodes w/o data
