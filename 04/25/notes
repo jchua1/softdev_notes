@@ -1,0 +1,20 @@
+Aim: Close it Down
+
+A CLOSURE is a function that refers to independent variables, such that the function defined in the closure "remembers" the environment in which it was created.
+
+or
+
+A CLOSURE is the scope available to a function at the time of its definition.
+
+Python allows you to define a function within a function.
+
+As in Scheme, Python can use lambda to create a function literal without a name (an 'anonymous function').
+
+This command creates a closure, by binding variables:
+b = h(1)
+
+Now for a non-anonymous function within a function:
+def f(x):
+	def g(y):
+		return x + y
+	return g
