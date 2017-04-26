@@ -1,0 +1,10 @@
+
+
+in a closure...
+A function is declared inside another function
+The inner function accesses a variable from the outer function (outside of the local scope of the inner function)
+The external function binds a value to the variable and finish (or closes) before the inner function can be completed
+
+A Python decorator encapsulates a closure
+
+A python decorator allows you to transparently wrap functionality
