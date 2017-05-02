@@ -1,0 +1,3 @@
+Aim: Memorization and the Holy Trinity
+
+Memoization: saving computed values in a(n often recursive) algorithm to avoid recomputing them later --- thereby improving efficiency
