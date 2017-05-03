@@ -1,0 +1,67 @@
+Aim: The Holy Trinity
+
+Python Tutor Link: goo.gl/kqtVkN
+
+map/filter/reduce
+the "holy trinity" of list processing
+
+REDUCE: compute a value based on a list's contents
+(ie: reduce a list to a single value, eg: sum, product, min)
+ 
+reduce(<FUNCTION>, <LIST>)
+
+function must have 2 parameters
+function is continually applied to first 2 elements until only 1 remains
+
+>>> reduce(lambda x,y: x+y, [47,11,42,13])
+113
+
+MAP: build a new list by applying a function each element of an existing list
+
+map(<FUNCTION>, <LIST>)
+
+F = map(fahrenheit, temp)
+C = map(celsius, F)
+
+Python's map can hadle multiple iunput lists.
+(precond: input lists must have equal lengths)
+
+>>> a = [1,2,3,4]
+>>> b = [17,12,11,10]
+>>> c = [-1,-4,5,9]
+>>> map(lambda x,y,z: x+y+z, a,b,c)
+
+FILTER: build a new list by applying a boolean condition to each element of an existing list
+
+filter(<FUNCTION>, <LIST>)
+
+if function yields true for an element, that elements will be included in returned list
+
+map and filter generally show up in Python as list comprehensions
+
+the <FUNCTION> arg is almost always a lambda expression
+
+List comprehension is a complete substitute for the lambda function as well as the functions map(), filter(), and reduce()
+
+Code review main goals:
+
+spot and fix defects early
+1. improve shared understanding of code base
+2. up consistency in design and implementation
+3. identify common defects across the team thus reducing rework
+4. build stakeholder confidence in technical quality
+5. validate interchangeability of team members
+6. perspective. "Another set of eyes" adds objectivity
+7. pride/reward
+8. team coheisveness. respite from isolation of coding
+
+The main areas a reviewer is focusing on are as follows:
+- General Unit Testing
+- Comment and Coding Conventions
+- Error Handling
+- Resouce Leaks
+- Thread Safety
+- Control Structures
+- Performance
+- Functionality
+- Security
