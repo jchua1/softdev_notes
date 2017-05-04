@@ -45,15 +45,15 @@ List comprehension is a complete substitute for the lambda function as well as t
 
 Code review main goals:
 
-spot and fix defects early
-1. improve shared understanding of code base
-2. up consistency in design and implementation
-3. identify common defects across the team thus reducing rework
-4. build stakeholder confidence in technical quality
-5. validate interchangeability of team members
-6. perspective. "Another set of eyes" adds objectivity
-7. pride/reward
-8. team coheisveness. respite from isolation of coding
+1. spot and fix defects early
+2. improve shared understanding of code base
+3. up consistency in design and implementation
+4. identify common defects across the team thus reducing rework
+5. build stakeholder confidence in technical quality
+6. validate interchangeability of team members
+7. perspective. "Another set of eyes" adds objectivity
+8. pride/reward
+9. team coheisveness. respite from isolation of coding
 
 The main areas a reviewer is focusing on are as follows:
 - General Unit Testing
